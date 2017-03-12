@@ -7,20 +7,20 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private static Button btn;
+    private static Button btn1;
     private static Button btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn=(Button)findViewById(R.id.button);
+        btn1=(Button)findViewById(R.id.button);
         openLogin();
         btn2=(Button)findViewById(R.id.button2);
         openRegistration();
     }
 
     public void openLogin(){
-        btn.setOnClickListener(
+        btn1.setOnClickListener(
             new View.OnClickListener(){
                 public void onClick(View v){
                     Intent intent=new Intent("com.example.codept.auth.Login");
